@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>User</h1>
+  <h2><%= @user.name %></h2>
+
+<% @user_urls.each do |url| %>
+  <% url_str = "<a href=/#{url.longer_url}>#{url.long_url} </a>" %>
+  <% if @is_current_user %>
+    <% visited_count = "Visited #{url.click_count} times"%>
+    <%= url_str + visited_count + "<br>"%>
+  <% else %>
+    <%= url_str + "<br>"%>
+  <% end %>
+<% end %>
+</div>

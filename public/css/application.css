@@ -1,0 +1,9 @@
+.container {
+  margin: 20px auto;
+  width: 800px;
+  padding: 0px 20px 20px 20px;
+  float: left;
+}
+th {
+  text-align: left;
+}
